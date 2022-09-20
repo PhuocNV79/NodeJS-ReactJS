@@ -23,6 +23,8 @@
 - Cleanup function được sử dụng khi component có thể bị unmouted mà component đó có sử dụng setInterval, setTimeOut, async, listener event, subscriber event
 
 ### ---- useLayoutEffect() ---
+- 
+
 ### ---- useCallback() ---
 ### ---- useMemo() ---
 ### ---- useReducer() ---
