@@ -13,8 +13,14 @@
 - Được sử dụng khi cần các side effect
 - Cần hiểu rõ add/remove event listener, observer pattern : subscribe, unsubscribe, closure, ===, call api
 - useEffect thường được sử dụng để update DOM, Call API, Listen DOM event, Clean up: subscribe, unsubscribe
-- callback luôn được gọi khi component được mounted
-- TH useEffect(callback): callback được gọi khi component rerender
+- Chung: callback luôn được gọi khi component được mounted
+- TH `useEffect(callback)`: callback được gọi khi component rerender
+- TH `useEffect(callback, [])`: Chỉ gọi callback 1 lần khi component mounted
+- TH `useEffect(callback, [deps])`: Được gọi lại khi deps thay đổi
+- Cleanup function luôn được gọi trước khi component được unmounted
+- Cleanup function luôn được gọi trước khi callback được gọi (trừ lần component được mounted)
+- Cleanup function là hàm được return ra từ useEffect()
+- Cleanup function được sử dụng khi component có thể bị unmouted mà component đó có sử dụng setInterval, setTimeOut, async, listener event, subscriber event
 
 ### ---- useLayoutEffect() ---
 ### ---- useCallback() ---
