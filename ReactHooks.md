@@ -24,9 +24,18 @@
 
 ### ---- useLayoutEffect() ---
 - 
-
+### memo
+- Higher order component (HOC)
+- memo giúp ghi nhớ các props của component để tránh việc rerender ko cần thiết khi các props ko thay đổi
 ### ---- useCallback() ---
+- Thường sử dụng kèm với memo()
+- Khi component cha truyền cho component con 1 props dạng tham chiếu, với mỗi lần rerender sẽ tạo ra 1 tham chiếu mới => dẫn đến component con bị rerender. Nhưng mình muốn chỉ có 1 tham chiếu được dùng kể cả khi bị render component cha thì props đó vẫn có 1 địa chỉ bộ nhớ => useCallback(callback, []), 
+- deps và callback hoạt động giống như useEffect()
+
 ### ---- useMemo() ---
+- giúp tránh thực hiện lại 1 logic nào đó không cần thiết
+- useMemo nhận vào 1 callback, callback này trả ra 1 kết quả
+- useMemo(callback, [deps]): callback sẽ được gọi lại khi deps thay đổi 
 ### ---- useReducer() ---
 ### ---- useContext() ---
 ### ---- useImperativeHandle() ---
@@ -35,7 +44,4 @@
 - Là 1 hàm trả về 1 plain object có property là "current"
 - Nhận vào 1 giá trị khởi tạo
 - Hàm useRef chỉ sử dụng giá trị khởi tạo ở lần đầu tiên component được mounted (nếu ko truyền thì là undefined). Còn khi component được render thì hàm này ko sử dựng giá trị init đó nữa
-- 
-
-
-### ---- useRef() ---
+- Có thể lưu DOM element bằng useRef
