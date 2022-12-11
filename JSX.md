@@ -1,1 +1,2 @@
-# JSX
+# JSX: Javascript XML
+
