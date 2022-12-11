@@ -6,7 +6,7 @@
 - Component sẽ được rerender sau khi hàm setState chạy
 - Initial value chỉ được dùng cho lần render đầu tiên
 - useState nhận vào initial value, trả ra mảng 2 phần tử [state, setState]
-- hàm setState có thể nhận vào 1 call back. param là state trước đó setState(pre => {do something})
+- hàm setState có thể nhận vào 1 call back. param là state trước đó setState(previousState => {do something})
 - hàm useState có thể nhận vào 1 callback, và lấy giá trị trả về của callback để làm initial value
 
 ### ---- useEffect(callback, [dependencies]) ---
