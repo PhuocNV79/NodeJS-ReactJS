@@ -23,7 +23,7 @@
 - Cleanup function được sử dụng khi component có thể bị unmouted mà component đó có sử dụng setInterval, setTimeOut, async, listener event, subscriber event
 
 ### ---- useLayoutEffect() ---
-- 
+- Gần như tương tự với useEffect. Khác nhau ở chỗ thứ tự thực hiện. Hiếm khi dùng thằng này
 ### memo
 - Higher order component (HOC)
 - memo giúp ghi nhớ các props của component để tránh việc rerender ko cần thiết khi các props ko thay đổi
