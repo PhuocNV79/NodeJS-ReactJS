@@ -42,6 +42,7 @@
 - Tạo 1 context, export ra ngoài => ở nơi nào cần dùng thì import nó vào => AbcContext.Provider, AbcContext.Consumer
 - Cách truyền và nhận context giữa cha và cháu
 ### ---- useRef() ---
+- Luu cac gia tri qua 1 ham tham chieu ben ngoai.
 - Là 1 hàm trả về 1 plain object có property là "current"
 - Nhận vào 1 giá trị khởi tạo
 - const xXRef = useRef(): xXRef sẽ được truyền vào 1 property là ref={xXref}. property này chỉ có ở trong DOM thật (thẻ div, p...)
