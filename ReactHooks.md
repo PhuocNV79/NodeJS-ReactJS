@@ -35,7 +35,8 @@
 ### ---- useMemo() ---
 - giúp tránh thực hiện lại 1 logic nào đó không cần thiết
 - useMemo nhận vào 1 callback, callback này trả ra 1 kết quả
-- useMemo(callback, [deps]): callback sẽ được gọi lại khi deps thay đổi 
+- useMemo(callback, [deps]): callback sẽ được gọi lại khi deps thay đổi.
+- Nếu deps = [] thì useMemo chỉ tính toán 1 lần. ở những lần component được rerender lại thì useMemo trả về giá trị tính toán đó.
 ### ---- useReducer() ---
 ### ---- useContext() ---
 - Giúp truyền data từ cha đến cháu mà không cần thông qua con
