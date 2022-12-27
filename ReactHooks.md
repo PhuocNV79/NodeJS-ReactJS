@@ -55,3 +55,5 @@
 
 ### --- forwardRef() ---
 - là 1 higer order component
+- Khi ở compnent cha, tạo 1 abcRef = useRef(), rồi truyền abcRef vào component con. thì sẽ ko nhận được. Nên ở component con phải
+ dùng HOC `forwardRef(bọc component con)`
