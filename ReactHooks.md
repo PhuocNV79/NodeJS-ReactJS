@@ -54,6 +54,7 @@
 - Giúp tuỳ chỉnh 1 ref của function component
 - Sử dụng khi muốn trả ra 1 vài chức năng của component chứ ko phải toàn bộ component
 - Ví dụ: component video, thì sử dụng useImperativeHandle để trả ra 2 chức năng play và pause thôi
+- https://www.youtube.com/watch?v=dSzf0nv6QmM&list=PL_-VfJajZj0UXjlKfBwFX73usByw3Ph9Q&index=49
 
 ### --- forwardRef() ---
 - là 1 higer order component
