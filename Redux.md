@@ -1,5 +1,7 @@
 ### Redux
-* Store: là 1 object, nơi lưu trữ tất cả các state, store chứa các reducers
+- Redux là 1 pattern, 1 thư viện dùng để quản lý và cập nhật state của ứng dụng;
+- redux hoạt động như là 1 trung tâm lưu trữ state của toàn bộ ứng dụng, với qui tắc là đảm bảo update state predictable;
+- **Store**: là 1 object, nơi lưu trữ tất cả các state, store chứa các reducers
     - Tạo 1 store bằng cách gọi createStore. Và truyền những reducer mà store ni quản lý
 * **Reducer**: là 1 function. nhận vào 2 tham số là state : any và action: {}, dựa vào action.type để từ state cũ tạo ra state mới và trả về
 * **Action**: là 1 object. mỗi action có 1 type và thường thì sẽ có 1 payload dùng để gửi cho reducer để reducers dựa vào đó thay đổi state.
